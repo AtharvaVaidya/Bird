@@ -6,3 +6,5 @@ Things to improve:
 - Tests: I didn't have enough time to add tests but I have implemented everything keeping testability in mind so it should be easy enough to setup mocks with a tool like sourcery.
 - Location Permissions: Give the user more flexibility in when we ask for location permission so they can show their own prompt before asking for permissions.
 
+
+To run the project just open the `Bird.xcworkspace` file
