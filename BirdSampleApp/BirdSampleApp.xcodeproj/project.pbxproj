@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC4568CE2BF9FB920000678E /* BirdSampleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4568CD2BF9FB920000678E /* BirdSampleAppApp.swift */; };
+		EC4568D02BF9FB920000678E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4568CF2BF9FB920000678E /* ContentView.swift */; };
+		EC4568D22BF9FB920000678E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4568D12BF9FB920000678E /* Item.swift */; };
+		EC4568D42BF9FB950000678E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4568D32BF9FB950000678E /* Assets.xcassets */; };
+		EC4568D72BF9FB950000678E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4568D62BF9FB950000678E /* Preview Assets.xcassets */; };
+		EC4568E12BF9FB960000678E /* BirdSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4568E02BF9FB960000678E /* BirdSampleAppTests.swift */; };
+		EC4568EB2BF9FB960000678E /* BirdSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4568EA2BF9FB960000678E /* BirdSampleAppUITests.swift */; };
+		EC4568ED2BF9FB960000678E /* BirdSampleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4568EC2BF9FB960000678E /* BirdSampleAppUITestsLaunchTests.swift */; };
+		ECE15B772BF9FE4500E48BE7 /* BirdPackage in Resources */ = {isa = PBXBuildFile; fileRef = ECE15B762BF9FE4500E48BE7 /* BirdPackage */; };
+		ECE15B7A2BF9FE5A00E48BE7 /* Bird in Frameworks */ = {isa = PBXBuildFile; productRef = ECE15B792BF9FE5A00E48BE7 /* Bird */; };
+		ECE15B7C2BF9FEC800E48BE7 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE15B7B2BF9FEC800E48BE7 /* ContentViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC4568DD2BF9FB960000678E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC4568C22BF9FB920000678E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC4568C92BF9FB920000678E;
+			remoteInfo = BirdSampleApp;
+		};
+		EC4568E72BF9FB960000678E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC4568C22BF9FB920000678E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC4568C92BF9FB920000678E;
+			remoteInfo = BirdSampleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC4568CA2BF9FB920000678E /* BirdSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4568CD2BF9FB920000678E /* BirdSampleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdSampleAppApp.swift; sourceTree = "<group>"; };
+		EC4568CF2BF9FB920000678E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EC4568D12BF9FB920000678E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		EC4568D32BF9FB950000678E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC4568D62BF9FB950000678E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC4568DC2BF9FB960000678E /* BirdSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4568E02BF9FB960000678E /* BirdSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdSampleAppTests.swift; sourceTree = "<group>"; };
+		EC4568E62BF9FB960000678E /* BirdSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4568EA2BF9FB960000678E /* BirdSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdSampleAppUITests.swift; sourceTree = "<group>"; };
+		EC4568EC2BF9FB960000678E /* BirdSampleAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdSampleAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ECE15B762BF9FE4500E48BE7 /* BirdPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BirdPackage; path = ..; sourceTree = "<group>"; };
+		ECE15B7B2BF9FEC800E48BE7 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC4568C72BF9FB920000678E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECE15B7A2BF9FE5A00E48BE7 /* Bird in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4568D92BF9FB960000678E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4568E32BF9FB960000678E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC4568C12BF9FB920000678E = {
+			isa = PBXGroup;
+			children = (
+				ECE15B762BF9FE4500E48BE7 /* BirdPackage */,
+				EC4568CC2BF9FB920000678E /* BirdSampleApp */,
+				EC4568DF2BF9FB960000678E /* BirdSampleAppTests */,
+				EC4568E92BF9FB960000678E /* BirdSampleAppUITests */,
+				EC4568CB2BF9FB920000678E /* Products */,
+				ECE15B782BF9FE5A00E48BE7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC4568CB2BF9FB920000678E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC4568CA2BF9FB920000678E /* BirdSampleApp.app */,
+				EC4568DC2BF9FB960000678E /* BirdSampleAppTests.xctest */,
+				EC4568E62BF9FB960000678E /* BirdSampleAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC4568CC2BF9FB920000678E /* BirdSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				EC4568CD2BF9FB920000678E /* BirdSampleAppApp.swift */,
+				EC4568CF2BF9FB920000678E /* ContentView.swift */,
+				ECE15B7B2BF9FEC800E48BE7 /* ContentViewModel.swift */,
+				EC4568D12BF9FB920000678E /* Item.swift */,
+				EC4568D32BF9FB950000678E /* Assets.xcassets */,
+				EC4568D52BF9FB950000678E /* Preview Content */,
+			);
+			path = BirdSampleApp;
+			sourceTree = "<group>";
+		};
+		EC4568D52BF9FB950000678E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EC4568D62BF9FB950000678E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC4568DF2BF9FB960000678E /* BirdSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC4568E02BF9FB960000678E /* BirdSampleAppTests.swift */,
+			);
+			path = BirdSampleAppTests;
+			sourceTree = "<group>";
+		};
+		EC4568E92BF9FB960000678E /* BirdSampleAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC4568EA2BF9FB960000678E /* BirdSampleAppUITests.swift */,
+				EC4568EC2BF9FB960000678E /* BirdSampleAppUITestsLaunchTests.swift */,
+			);
+			path = BirdSampleAppUITests;
+			sourceTree = "<group>";
+		};
+		ECE15B782BF9FE5A00E48BE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC4568C92BF9FB920000678E /* BirdSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4568F02BF9FB960000678E /* Build configuration list for PBXNativeTarget "BirdSampleApp" */;
+			buildPhases = (
+				EC4568C62BF9FB920000678E /* Sources */,
+				EC4568C72BF9FB920000678E /* Frameworks */,
+				EC4568C82BF9FB920000678E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirdSampleApp;
+			packageProductDependencies = (
+				ECE15B792BF9FE5A00E48BE7 /* Bird */,
+			);
+			productName = BirdSampleApp;
+			productReference = EC4568CA2BF9FB920000678E /* BirdSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC4568DB2BF9FB960000678E /* BirdSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4568F32BF9FB960000678E /* Build configuration list for PBXNativeTarget "BirdSampleAppTests" */;
+			buildPhases = (
+				EC4568D82BF9FB960000678E /* Sources */,
+				EC4568D92BF9FB960000678E /* Frameworks */,
+				EC4568DA2BF9FB960000678E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC4568DE2BF9FB960000678E /* PBXTargetDependency */,
+			);
+			name = BirdSampleAppTests;
+			productName = BirdSampleAppTests;
+			productReference = EC4568DC2BF9FB960000678E /* BirdSampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC4568E52BF9FB960000678E /* BirdSampleAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4568F62BF9FB960000678E /* Build configuration list for PBXNativeTarget "BirdSampleAppUITests" */;
+			buildPhases = (
+				EC4568E22BF9FB960000678E /* Sources */,
+				EC4568E32BF9FB960000678E /* Frameworks */,
+				EC4568E42BF9FB960000678E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC4568E82BF9FB960000678E /* PBXTargetDependency */,
+			);
+			name = BirdSampleAppUITests;
+			productName = BirdSampleAppUITests;
+			productReference = EC4568E62BF9FB960000678E /* BirdSampleAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC4568C22BF9FB920000678E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					EC4568C92BF9FB920000678E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					EC4568DB2BF9FB960000678E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = EC4568C92BF9FB920000678E;
+					};
+					EC4568E52BF9FB960000678E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = EC4568C92BF9FB920000678E;
+					};
+				};
+			};
+			buildConfigurationList = EC4568C52BF9FB920000678E /* Build configuration list for PBXProject "BirdSampleApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC4568C12BF9FB920000678E;
+			productRefGroup = EC4568CB2BF9FB920000678E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC4568C92BF9FB920000678E /* BirdSampleApp */,
+				EC4568DB2BF9FB960000678E /* BirdSampleAppTests */,
+				EC4568E52BF9FB960000678E /* BirdSampleAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC4568C82BF9FB920000678E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECE15B772BF9FE4500E48BE7 /* BirdPackage in Resources */,
+				EC4568D72BF9FB950000678E /* Preview Assets.xcassets in Resources */,
+				EC4568D42BF9FB950000678E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4568DA2BF9FB960000678E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4568E42BF9FB960000678E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC4568C62BF9FB920000678E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECE15B7C2BF9FEC800E48BE7 /* ContentViewModel.swift in Sources */,
+				EC4568D02BF9FB920000678E /* ContentView.swift in Sources */,
+				EC4568D22BF9FB920000678E /* Item.swift in Sources */,
+				EC4568CE2BF9FB920000678E /* BirdSampleAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4568D82BF9FB960000678E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4568E12BF9FB960000678E /* BirdSampleAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4568E22BF9FB960000678E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4568EB2BF9FB960000678E /* BirdSampleAppUITests.swift in Sources */,
+				EC4568ED2BF9FB960000678E /* BirdSampleAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC4568DE2BF9FB960000678E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC4568C92BF9FB920000678E /* BirdSampleApp */;
+			targetProxy = EC4568DD2BF9FB960000678E /* PBXContainerItemProxy */;
+		};
+		EC4568E82BF9FB960000678E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC4568C92BF9FB920000678E /* BirdSampleApp */;
+			targetProxy = EC4568E72BF9FB960000678E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EC4568EE2BF9FB960000678E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC4568EF2BF9FB960000678E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC4568F12BF9FB960000678E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BirdSampleApp/Preview Content\"";
+				DEVELOPMENT_TEAM = Y7969DNQN4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"We need location permission to send your location to Bird\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atharva.BirdSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC4568F22BF9FB960000678E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BirdSampleApp/Preview Content\"";
+				DEVELOPMENT_TEAM = Y7969DNQN4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"We need location permission to send your location to Bird\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atharva.BirdSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC4568F42BF9FB960000678E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y7969DNQN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atharva.BirdSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BirdSampleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BirdSampleApp";
+			};
+			name = Debug;
+		};
+		EC4568F52BF9FB960000678E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y7969DNQN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atharva.BirdSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BirdSampleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BirdSampleApp";
+			};
+			name = Release;
+		};
+		EC4568F72BF9FB960000678E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y7969DNQN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atharva.BirdSampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BirdSampleApp;
+			};
+			name = Debug;
+		};
+		EC4568F82BF9FB960000678E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y7969DNQN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atharva.BirdSampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BirdSampleApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC4568C52BF9FB920000678E /* Build configuration list for PBXProject "BirdSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4568EE2BF9FB960000678E /* Debug */,
+				EC4568EF2BF9FB960000678E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC4568F02BF9FB960000678E /* Build configuration list for PBXNativeTarget "BirdSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4568F12BF9FB960000678E /* Debug */,
+				EC4568F22BF9FB960000678E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC4568F32BF9FB960000678E /* Build configuration list for PBXNativeTarget "BirdSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4568F42BF9FB960000678E /* Debug */,
+				EC4568F52BF9FB960000678E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC4568F62BF9FB960000678E /* Build configuration list for PBXNativeTarget "BirdSampleAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4568F72BF9FB960000678E /* Debug */,
+				EC4568F82BF9FB960000678E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECE15B792BF9FE5A00E48BE7 /* Bird */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Bird;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EC4568C22BF9FB920000678E /* Project object */;
+}
