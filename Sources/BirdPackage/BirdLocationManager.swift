@@ -46,7 +46,7 @@ public class BirdLocationManager: BirdLocationManagerProtocol {
         self.locationManager = locationManager
         self.apiConfig = apiConfig
         
-        authenticate()
+        authenticateIfNeeded()
         setupObservers()
     }
 
@@ -79,8 +79,6 @@ public class BirdLocationManager: BirdLocationManagerProtocol {
     ///
     /// - Throws: An error if authentication credentials are not loaded.
     public func startCapturingLocation() throws {
-        print("Starting to capture location")
-        
         guard authCredentialsLoaded else {
             throw BirdError.authenticationError
         }
@@ -101,6 +99,15 @@ public class BirdLocationManager: BirdLocationManagerProtocol {
 }
 
 extension BirdLocationManager {
+    /// Only starts the authentication process if needed.
+    private func authenticateIfNeeded() {
+        guard !authCredentialsLoaded else {
+            return
+        }
+        
+        authenticate()
+    }
+    
     /// Only starts the authentication process if needed.
     private func authenticate() {
         guard !authenticationInProgress else { return }
@@ -153,7 +160,6 @@ extension BirdLocationManager {
     private func sendLocationDataToBird(_ locationData: LocationData) {
         Task.retrying { [self] in
             do {
-                print("sending location data to bird...")
                 try await locationService.sendLocationData(locationData)
             } catch {
                 guard let error = error as? APIError else {
@@ -171,7 +177,7 @@ extension BirdLocationManager {
                         authenticate()
                     }
                 case .genericError:
-                    print("Bird had an unrecoverable error in sending location.")
+                    print("Bird had an unrecoverable error in sending location. Please try again.")
                 }
             }
         }
